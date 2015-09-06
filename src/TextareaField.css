@@ -5,11 +5,6 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-.tTextareaField {
-  min-height: 1.173333333333333rem;
-  padding-top: 0;
-  padding-left: 0.48rem;
-}
 .tTextareaFieldContent {
   padding: 0;
   border: none;
