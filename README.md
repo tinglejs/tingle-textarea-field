@@ -24,7 +24,7 @@ onChange={t.handleChange.bind(t)}/>
 |maxRows|Interger|10|最大行，超过则显示滚动条|
 |placeholder|String|``|提醒文案，默认空|
 |readOnly|Boolean|false|是否只读，只读时不能输入，默认false|
-|lineHeight|Interger|22|行高，默认22px|
+|lineHeight|Interger|48|行高，默认48px，是750设计稿，会转化为rem|
 |onChange|Function| function() {} | 输入内容变化时触发 |
 |onFocus|Function| function() {} | 获取到输入焦点时触发 |
 |onBlur|Function| function() {} | 与pc端一致，鼠标离开时响应 |
