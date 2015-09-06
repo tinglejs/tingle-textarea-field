@@ -1,0 +1,29 @@
+/**
+ * TextareaField Component Style for tingle
+ * @author zhangshun
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+
+// tingle-style's utils
+@require '../node_modules/tingle-style/src/var'
+
+.tTextareaField
+    min-height rem(88)
+    padding-top: 0;
+    padding-left: rem(36)
+.tTextareaFieldContent
+    padding 0
+    border none
+    outline none
+    margin: rem(22) 0;
+    color: #424242;
+    width 100%
+    background-color transparent
+    z-index 2
+    resize none
+    position relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/ 
+.readOnly
+    .tTextareaFieldContent
+        color: #ccc;

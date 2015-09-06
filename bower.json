@@ -1,0 +1,26 @@
+{
+  "name": "tingle-textarea-field",
+  "version": "0.0.0",
+  "description": "tingle-textarea-field component for tingle.",
+  "author": "zhangshun",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-textarea-field",
+    "TextareaField",
+    ""
+  ],
+  "license": "MIT",
+  "screenshots": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "dist",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
