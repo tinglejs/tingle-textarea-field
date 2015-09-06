@@ -6,5 +6,7 @@
  * All rights reserved.
  */
 window.FaskClick && FastClick.attach(document.body);
-var Demo = require('./TextareaFieldDemo');
+require("tingle-context");
+
+const Demo = require('./TextareaFieldDemo');
 React.render(<Demo/>, document.getElementById('TingleDemo'));

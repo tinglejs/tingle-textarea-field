@@ -10,8 +10,9 @@
     "README.md"
   ],
   "keywords": [
-    "tingle-textarea-field,TextareaField",
-    ""
+    "tingle-textarea-field",
+    "textareaField",
+    "tingle"
   ],
   "dependencies": {
     "autosize": "~3.0.8",

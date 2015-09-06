@@ -9,18 +9,18 @@
 // tingle-style's utils
 @require '../node_modules/tingle-style/src/var'
 
-//.tTextareaField
 .tTextareaFieldContent
+    position relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/ 
     padding 0
     border none
     outline none
-    margin: rem(22) 0;
-    color: #424242;
+    margin rem(22) 0
+    color #424242
     width 100%
     background-color transparent
     z-index 2
     resize none
-    position relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/ 
+
 .readOnly
     .tTextareaFieldContent
-        color: #ccc;
+        color #ccc;

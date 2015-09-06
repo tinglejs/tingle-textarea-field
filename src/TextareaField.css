@@ -6,6 +6,7 @@
  * All rights reserved.
  */
 .tTextareaFieldContent {
+  position: relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/;
   padding: 0;
   border: none;
   outline: none;
@@ -15,7 +16,6 @@
   background-color: transparent;
   z-index: 2;
   resize: none;
-  position: relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/;
 }
 .readOnly .tTextareaFieldContent {
   color: #ccc;
