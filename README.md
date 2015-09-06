@@ -1,15 +1,5 @@
 # TextareaField 多行文本框
 
-- name: tingle-textarea-field
-- category: tingle
-- title: TextareaField 多行文本框
-- tags: textarea
-- description: 属于 form 表达范畴，移动端 textarea 标签组件
-- maintainers: 张顺
-- version: 0.0.1
-- lastupdate: 2015-09-06
-- screenshots: https://gtms03.alicdn.com/tps/i3/TB1wzN5IVXXXXcxaXXXFIRO8VXX-445-198.png
-
 ---
 
 ## TL;DR
