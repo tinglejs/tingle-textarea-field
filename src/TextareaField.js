@@ -34,7 +34,7 @@ class TextareaField extends React.Component {
         };
 
         return (
-            <Field  {...t.props}  className={classnames({
+            <Field  {...t.props} multiLine={true}  className={classnames({
                     'tTextareaField': true,
                     'readOnly':readOnly,
                     [t.props.className]: !!t.props.className
