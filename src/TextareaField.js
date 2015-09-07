@@ -25,8 +25,8 @@ class TextareaField extends React.Component {
         var t = this;
         let {
             placeholder, label, readOnly
-        } = t.props;
-        
+            } = t.props;
+
         let style = {
             lineHeight: Context.rem(t.state.lineHeight),
             minHeight: Context.rem(t.state.lineHeight * t.props.minRows),
@@ -35,18 +35,18 @@ class TextareaField extends React.Component {
 
         return (
             <Field  {...t.props} multiLine={true}  className={classnames({
-                    'tTextareaField': true,
-                    'readOnly':readOnly,
-                    [t.props.className]: !!t.props.className
-                })}>
-                    <textarea ref="textarea"
-                    className="tTextareaFieldContent tFC9" 
+                'tTextareaField': true,
+                'readOnly': readOnly,
+                [t.props.className]: !!t.props.className
+            })}>
+                <textarea ref="textarea"
+                    className="tTextareaFieldContent tFC9"
                     style={style}
                     placeholder={placeholder}
-                    value={t.props.value} 
+                    value={t.props.value}
                     readOnly={readOnly}
                     rows={t.props.minRows}
-                    onChange={t.handleChange.bind(t)} 
+                    onChange={t.handleChange.bind(t)}
                     onFocus={t.handleFocus.bind(t)}
                     onBlur={t.handleBlur.bind(t)}/>
             </Field>
@@ -89,7 +89,7 @@ TextareaField.defaultProps = {
     minRows: 1,
     maxRows: 10,
     lineHeight: 48
-}
+};
 
 // http://facebook.github.io/react/docs/reusable-components.html
 TextareaField.propTypes = {
@@ -102,7 +102,7 @@ TextareaField.propTypes = {
     minRows: React.PropTypes.number,
     maxRows: React.PropTypes.number,
     lineHeight: React.PropTypes.number
-}
+};
 
 TextareaField.displayName = 'TextareaField';
 
