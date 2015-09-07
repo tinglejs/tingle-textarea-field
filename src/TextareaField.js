@@ -1,16 +1,16 @@
 /**
  * Field Component for tingle
- * @auther zhangshun
+ * @author zhangshun
  *
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
 
-var Context = require('tingle-context');
-var Field = require('tingle-field');
-var classnames = require('classnames');
+const Context = require('tingle-context');
+const Field = require('tingle-field');
+const classnames = require('classnames');
+const autosize = require('autosize');
 
-var autosize = require('autosize');
 
 class TextareaField extends React.Component {
 
@@ -25,12 +25,12 @@ class TextareaField extends React.Component {
         var t = this;
         let {
             placeholder, label, readOnly
-        } = this.props;
+        } = t.props;
         
         let style = {
-            lineHeight: t.state.lineHeight + 'px',
-            minHeight: t.state.lineHeight * t.props.minRows,
-            maxHeight: t.state.lineHeight * t.props.maxRows
+            lineHeight: Context.rem(t.state.lineHeight),
+            minHeight: Context.rem(t.state.lineHeight * t.props.minRows),
+            maxHeight: Context.rem(t.state.lineHeight * t.props.maxRows)
         };
 
         return (
@@ -53,19 +53,15 @@ class TextareaField extends React.Component {
         );
     }
 
-    /**
-     * 重新调整高度
-     * @return {[type]} [description]
-     */
     componentDidMount() {
+        let t = this;
         // 设置autosize
-        var t = this;
-        var textareaEl = React.findDOMNode(t.refs.textarea);
+        let textareaEl = React.findDOMNode(t.refs.textarea);
         autosize(textareaEl);
     }
 
+    // 销毁
     componentWillUnmount() {
-        // 销毁
         autosize.destroy(React.findDOMNode(this.refs.textarea));
     }
 
@@ -92,7 +88,7 @@ TextareaField.defaultProps = {
     readOnly: false,
     minRows: 1,
     maxRows: 10,
-    lineHeight: 22
+    lineHeight: 48
 }
 
 // http://facebook.github.io/react/docs/reusable-components.html
@@ -107,5 +103,7 @@ TextareaField.propTypes = {
     maxRows: React.PropTypes.number,
     lineHeight: React.PropTypes.number
 }
+
+TextareaField.displayName = 'TextareaField';
 
 module.exports = TextareaField;

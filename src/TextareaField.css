@@ -6,7 +6,8 @@
  * All rights reserved.
  */
 .tTextareaFieldContent {
-  padding: 0;
+  position: relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/;
+  padding: 0 1.066666666666667rem 0 0;
   border: none;
   outline: none;
   margin: 0.293333333333333rem 0;
@@ -15,10 +16,9 @@
   background-color: transparent;
   z-index: 2;
   resize: none;
-  position: relative /*重要，解决UC、猎豹等浏览器z-index失效的问题*/;
 }
 .readOnly .tTextareaFieldContent {
-  color: #ccc;
+  color: #bdbdbd;
 }
 
 /*# sourceMappingURL=TextareaField.css.map */

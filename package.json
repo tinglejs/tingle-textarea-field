@@ -10,8 +10,9 @@
     "README.md"
   ],
   "keywords": [
-    "tingle-textarea-field,TextareaField",
-    ""
+    "tingle-textarea-field",
+    "textareaField",
+    "tingle"
   ],
   "dependencies": {
     "autosize": "~3.0.8",
@@ -19,8 +20,8 @@
     "fastclick": "^1.0.6",
     "react": "^0.13.3",
     "tingle-context": "latest",
-    "tingle-field": "0.0.1",
-    "tingle-group-list": "0.0.1",
+    "tingle-field": "~0.0.2",
+    "tingle-group-list": "~0.0.1",
     "tingle-style": "latest",
     "zepto": "0.0.4"
   },
@@ -34,5 +35,5 @@
     "start": "gulp server"
   },
   "license": "MIT",
-  "screenshots": ""
+  "screenshots": "https://gtms03.alicdn.com/tps/i3/TB1wzN5IVXXXXcxaXXXFIRO8VXX-445-198.png"
 }

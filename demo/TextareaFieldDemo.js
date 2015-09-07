@@ -5,17 +5,13 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-require("fastclick").attach(document.body);
-require("tingle-context");
-var GroupList = require('tingle-group-list');
+const GroupList = require('tingle-group-list');
+const classnames = require('classnames');
 
-var classnames = require('classnames');
-
-var TextareaField = require('../src');
+const TextareaField = require('../src');
 
 class Demo extends React.Component {
-
-   
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -24,7 +20,6 @@ class Demo extends React.Component {
     }
 
     handleChange(value, e) {
-        //console.log(e.currentTarget.value)
         this.setState({
             t1: value
         });
@@ -34,8 +29,7 @@ class Demo extends React.Component {
         var t = this;
         return (
             <div>
-
-                <GroupList title="Label文字长度测试" itemIndent={0}>
+                <GroupList title="Label文字长度测试">
                     <TextareaField label="俩字" minRows={2} placeholder="设置2个行高"
                      value={t.state.t1}
                      onChange={t.handleChange.bind(t)}/>
@@ -49,11 +43,11 @@ class Demo extends React.Component {
                      value={t.state.t1}
                      rows={3}/>
                 </GroupList>
-                <GroupList title="不可修改" itemIndent={0}>
+                
+                <GroupList title="不可修改">
                     <TextareaField label="只读"
                      value="不能更改" readOnly={true}/>
                 </GroupList>
-               
             </div>
         );
     }
