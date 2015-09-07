@@ -1,4 +1,4 @@
-# TextareaField 多行文本框
+# TextareaField 多行文本框 [![npm version](https://badge.fury.io/js/tingle-textarea-field.svg)](http://badge.fury.io/js/tingle-textarea-field)
 
 
 ## TL;DR
@@ -8,7 +8,7 @@
 
 ## Simple Usage
 
-```
+```javascript
 <TextareaField label="三个字" minRows={2} maxRows={5} 
 placeholder="3个行高 最大5个行高" value={t.state.remark}
 onChange={t.handleChange.bind(t)}/>
@@ -35,40 +35,22 @@ onChange={t.handleChange.bind(t)}/>
 
 ## 事件
 
-- onChange(newValue, e) 
+### onChange(newValue, e) 
 
-````javascript
+```javascript
 // 新值和事件对象
 handleChange(newValue,e) {
     
 }
 
-````
+```
 
-- onFocus(e) 
+### onFocus(e) 
 
-- onBlur(e) 
+### onBlur(e) 
 
 
 
 ## Links 相关链接
 
 - [Fire a bug/Issues 提 Bug](https://github.com/tinglejs/tingle-textarea-field/issues)
-
-- [tingle](https://github.com/tinglejs)
-
-
-
-# 如何删除git submodule子项
-imouse posted @ 2012年11月11日 03:29 in Linux with tags Git submodule , 1743 阅读
-1. 编辑.gitmodules,删除对应要删除的submodule的行．
-
-2. 编辑.git/config,删除有对应要删除的submodule的行．
-
-3. 删除命令:
-
-    git rm --cached bundle/xxxx  (PS:此处最后没有符号 / .)
-
-4. 删除对应的目录:
-
-    rm -rf bundle/xxxx

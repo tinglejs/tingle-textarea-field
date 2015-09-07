@@ -25,7 +25,7 @@ class TextareaField extends React.Component {
         var t = this;
         let {
             placeholder, label, readOnly
-        } = this.props;
+        } = t.props;
         
         let style = {
             lineHeight: Context.rem(t.state.lineHeight),
@@ -54,9 +54,9 @@ class TextareaField extends React.Component {
     }
 
     componentDidMount() {
-        var t = this;
+        let t = this;
         // 设置autosize
-        var textareaEl = React.findDOMNode(t.refs.textarea);
+        let textareaEl = React.findDOMNode(t.refs.textarea);
         autosize(textareaEl);
     }
 
@@ -103,5 +103,7 @@ TextareaField.propTypes = {
     maxRows: React.PropTypes.number,
     lineHeight: React.PropTypes.number
 }
+
 TextareaField.displayName = 'TextareaField';
+
 module.exports = TextareaField;
