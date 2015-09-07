@@ -3,7 +3,7 @@
 
 ## TL;DR
 
-1. 这是一个 tingle 组件，表单多行文本框，包括标题和表单，展示效果如下：  
+这是一个 tingle 组件，表单多行文本框，包括标题和表单，展示效果如下：  
 ![效果图](https://gtms03.alicdn.com/tps/i3/TB1wzN5IVXXXXcxaXXXFIRO8VXX-445-198.png_200x200.jpg)
 
 ## Simple Usage

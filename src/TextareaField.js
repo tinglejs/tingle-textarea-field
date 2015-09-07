@@ -103,5 +103,5 @@ TextareaField.propTypes = {
     maxRows: React.PropTypes.number,
     lineHeight: React.PropTypes.number
 }
-
+TextareaField.displayName = 'TextareaField';
 module.exports = TextareaField;
