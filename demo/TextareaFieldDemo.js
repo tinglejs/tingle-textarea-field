@@ -36,7 +36,7 @@ class Demo extends React.Component {
                     <TextareaField label="三个字" minRows={2} maxRows={5} placeholder="3个行高 最大5个行高"
                      value={t.state.t1}
                      onChange={t.handleChange.bind(t)}/>
-                    <TextareaField label="最多四个" placeholder="请输入"
+                    <TextareaField label="一二三四五六" placeholder="请输入"
                      value={t.state.t1}
                      onChange={t.handleChange.bind(t)}/>
                     <TextareaField  placeholder="请输入"
