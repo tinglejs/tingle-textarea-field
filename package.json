@@ -23,7 +23,8 @@
   "dependencies": {
     "classnames": "^2.1.2",
     "tingle-context": "~0.1.0",
-    "tingle-style": "~0.2.0"
+    "tingle-style": "~0.2.0",
+    "tingle-field": "~0.2.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",
@@ -31,7 +32,8 @@
     "gulp": "^3.9.0",
     "tingle-dev-tools": "latest",
     "fastclick": "^1.0.6",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "tingle-group-list":"~0.2.0"
   },
   "scripts": {
     "start": "gulp server"
