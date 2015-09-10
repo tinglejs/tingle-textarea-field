@@ -28,13 +28,13 @@ class TextareaField extends React.Component {
             } = t.props;
 
         let style = {
-            lineHeight: Context.rem(t.state.lineHeight),
-            minHeight: Context.rem(t.state.lineHeight * t.props.minRows),
-            maxHeight: Context.rem(t.state.lineHeight * t.props.maxRows)
+            lineHeight: t.state.lineHeight + 'px',
+            minHeight: t.state.lineHeight * t.props.minRows + 'px',
+            maxHeight: t.state.lineHeight * t.props.maxRows + 'px'
         };
 
         return (
-            <Field  {...t.props} multiLine={true}  className={classnames({
+            <Field {...t.props} multiLine={true}  className={classnames({
                 'tTextareaField': true,
                 'readOnly': readOnly,
                 [t.props.className]: !!t.props.className
@@ -88,7 +88,7 @@ TextareaField.defaultProps = {
     readOnly: false,
     minRows: 1,
     maxRows: 10,
-    lineHeight: 48
+    lineHeight: 24
 };
 
 // http://facebook.github.io/react/docs/reusable-components.html
