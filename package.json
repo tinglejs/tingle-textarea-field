@@ -7,7 +7,7 @@
     "name": "zhangshun",
     "email": ""
   },
-  "maintainers":[
+  "maintainers": [
     "yize <yize.shc@gmail.com>"
   ],
   "main": "src/index.js",
@@ -21,10 +21,11 @@
     "tingle"
   ],
   "dependencies": {
+    "autosize": "~3.0.10",
     "classnames": "^2.1.2",
     "tingle-context": "~0.1.0",
-    "tingle-style": "~0.2.0",
-    "tingle-field": "~0.2.0"
+    "tingle-field": "~0.2.0",
+    "tingle-style": "~0.2.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",
@@ -33,7 +34,7 @@
     "tingle-dev-tools": "latest",
     "fastclick": "^1.0.6",
     "react": "^0.13.3",
-    "tingle-group-list":"~0.2.0"
+    "tingle-group-list": "~0.2.0"
   },
   "scripts": {
     "start": "gulp server"
