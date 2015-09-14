@@ -1,11 +1,11 @@
 {
   "name": "tingle-textarea-field",
-  "version": "0.2.1",
-  "description": "tingle-textarea-field component for tingle.",
+  "version": "0.2.2",
+  "description": "textarea 域，支持设置 autosize",
   "repository": "https://github.com/tinglejs/tingle-textarea-field.git",
   "author": {
     "name": "zhangshun",
-    "email": ""
+    "email": "kangning1206@163.com"
   },
   "maintainers": [
     "yize <yize.shc@gmail.com>"
@@ -18,10 +18,13 @@
   "keywords": [
     "tingle-textarea-field",
     "textareaField",
-    "tingle"
+    "tingle",
+    "文本框",
+    "autosize",
+    "多行"
   ],
   "dependencies": {
-    "autosize": "~3.0.10",
+    "autosize": "3.0.9",
     "classnames": "^2.1.2",
     "tingle-context": "~0.1.0",
     "tingle-field": "~0.2.0",

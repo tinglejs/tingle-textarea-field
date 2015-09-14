@@ -1,4 +1,9 @@
 
+0.2.2 / 2015-09-14
+==================
+
+ * autosize has a bug >3.0.9 , see [The bug](https://github.com/jackmoore/autosize/issues/257)
+
 0.2.1 / 2015-09-11
 ==================
 
