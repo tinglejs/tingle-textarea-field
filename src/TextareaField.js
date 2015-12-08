@@ -6,31 +6,30 @@
  * All rights reserved.
  */
 
+// 参考://https://github.com/LingyuCoder/react-as-textarea/blob/publish/0.0.7/src/lib/Textarea.jsx
+
 const Context = require('tingle-context');
 const Field = require('tingle-field');
 const classnames = require('classnames');
-const autosize = require('autosize');
-
+const calculateHeight = require('./calculateHeight')
 
 class TextareaField extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            lineHeight: props.lineHeight
+            height: null
         };
     }
 
     render() {
-        var t = this;
+        let t = this;
         let {
             placeholder, label, readOnly
             } = t.props;
 
         let style = {
-            lineHeight: t.state.lineHeight + 'px',
-            minHeight: t.state.lineHeight * t.props.minRows + 'px',
-            maxHeight: t.state.lineHeight * t.props.maxRows + 'px'
+            height: t.state.height
         };
 
         return (
@@ -54,18 +53,21 @@ class TextareaField extends React.Component {
     }
 
     componentDidMount() {
-        let t = this;
-        // 设置autosize
-        let textareaEl = React.findDOMNode(t.refs.textarea);
-        autosize(textareaEl);
+        this._resize();
     }
 
-    // 销毁
-    componentWillUnmount() {
-        autosize.destroy(React.findDOMNode(this.refs.textarea));
+    componentWillReceiveProps(nextProps) {
+        if ('value' in nextProps) {
+            this._resize();
+        }
+    }
+
+    _resize() {
+        this.setState(calculateHeight(React.findDOMNode(this.refs.textarea), this.props.minRows || this.props.rows, this.props.maxRows));
     }
 
     handleChange(e) {
+        this._resize();
         this.props.onChange(e.target.value, e);
     }
 
@@ -87,8 +89,7 @@ TextareaField.defaultProps = {
     onBlur: Context.noop,
     readOnly: false,
     minRows: 1,
-    maxRows: 10,
-    lineHeight: 24
+    maxRows: 10
 };
 
 // http://facebook.github.io/react/docs/reusable-components.html
@@ -100,8 +101,7 @@ TextareaField.propTypes = {
     onBlur: React.PropTypes.func,
     readOnly: React.PropTypes.bool,
     minRows: React.PropTypes.number,
-    maxRows: React.PropTypes.number,
-    lineHeight: React.PropTypes.number
+    maxRows: React.PropTypes.number
 };
 
 TextareaField.displayName = 'TextareaField';
