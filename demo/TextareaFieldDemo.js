@@ -31,7 +31,7 @@ class Demo extends React.Component {
             <div>
                 <GroupList title="Label文字长度测试">
                     <TextareaField label="俩字" minRows={2} placeholder="设置2个行高"
-                     value={t.state.t1}
+                     value={"曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才后悔莫及，人世间最痛苦的事莫过于此。曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才后悔莫及，人世间最痛苦的事莫过于此。曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才后悔莫及，人世间最痛苦的事莫过于此。曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才后悔莫及，人世间最痛苦的事莫过于此。曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才后悔莫及，人世间最痛苦的事莫过于此。曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才后悔莫及，人世间最痛苦的事莫过于此。"}
                      onChange={t.handleChange.bind(t)}/>
                     <TextareaField label="三个字" minRows={2} maxRows={5} placeholder="3个行高 最大5个行高"
                      value={t.state.t1}

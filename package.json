@@ -1,6 +1,6 @@
 {
   "name": "tingle-textarea-field",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "textarea 域，支持设置 autosize",
   "repository": "https://github.com/tinglejs/tingle-textarea-field.git",
   "author": {
